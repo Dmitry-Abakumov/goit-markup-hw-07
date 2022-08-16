@@ -1,0 +1,34 @@
+.check-desc {
+    @extend %flex-centering;
+    margin-bottom: 30px;
+
+    @include font(14px, 400, 24px);
+    letter-spacing: 0.03em;
+    color: #757575;
+
+    &::before {
+        margin-right: 7px;
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border-radius: 2px;
+        border: 2px solid var(--primary-font-color);
+
+        transition: background-color var(--transition-dur-and-func), border-color var(--transition-dur-and-func);
+    }
+}
+
+.check-desc__policy-link {
+    color: var(--accent-color)
+}
+
+/* Оформление кастомного чекбокса */
+
+.checkbox:checked+.check-desc::before {
+    background-color: var(--accent-color);
+    background-image: url(../images/check-box/check.svg);
+    border-color: var(--accent-color);
+    background-size: contain;
+    background-origin: border-box;
+}

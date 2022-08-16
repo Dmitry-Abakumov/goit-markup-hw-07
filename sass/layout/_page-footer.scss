@@ -1,0 +1,53 @@
+.logo__text-invert {
+    color: #FFFFFF
+}
+
+.address-list {
+    font-style: normal;
+    @include font(14px, 400, 24px);
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+}
+
+.address-list__map {
+    color: #FFFFFF;
+}
+
+.page-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: #2F303A;
+}
+
+.page-footer__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.address-list__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-list__link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.page-footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.page-footer__logo-adress-wrapper {
+    margin-right: 60px;
+}
+
+
+.social-list__icon_footer-color {
+    fill: #FFFFFF
+}
+
+.social-list__link_footer-bg-color {
+    background-color: rgba(255, 255, 255, 0.1);
+}
